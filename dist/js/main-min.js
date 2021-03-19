@@ -1,1 +1,1 @@
-$(function(){"use strict";$(".toggle-sidebar").on("click",function(){$(".content-area, .sidebar").toggleClsss("no-sidebar")})});const map=new Map,mySet=new Set;
+$(function(){"use strict";$(".toggle-sidebar").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")})});const map=new Map,mySet=new Set;
