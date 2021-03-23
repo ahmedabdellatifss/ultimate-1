@@ -2,13 +2,14 @@
     box-sizing: border-box
 }
 body{
-
+    font-family: 'Open Sans', sans-serif;
 }
 .page{
     min-height:100vh;
     .content-area{
         width: calc(100% - 250px);
-        min-height:100%;
+        min-height:100vh;
+        background-color: #f2f1f6;
         transition: .3s;
         will-change: width;
         float: right;

@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage </title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap">
   </head>
   <body> 
     <div class="page home-page">
-      <div class="sidebar">sidebar</div>
+      <div class="sidebar">
+        <div class="logo-area">Designer </div>
+        <ul class="links-area list-unstyled">
+          <li><a href="#">Homepage</a></li>
+          <li><a class="toggle-submenu" href="#">Forms<i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">input</a></li>
+              <li><a href="#">Textarea</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Radio    </a></li>
+            </ul>
+          </li>
+          <li><a class="toggle-submenu" href="#">Misc<i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Loding</a></li>
+              <li><a href="#">Breadcrumbs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="content-area">
         <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
-        <div class="content"></div>
-        <vh1>Homepage</vh1>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">Homepage</h1>
+              <p class="page-description lead">this id description of Homepage</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </html>
