@@ -1,2 +1,23 @@
 .header
   i.fa.fa-exchange.fa-lg.toggle-sidebar
+  .dropdown.notifications-container
+    i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+    .dropdown-menu(aria-labelledby= 'dropdownMenuButton')
+      .noti-head
+        | Notification
+        span 50
+      .noti-content
+        ul.list-unstyled
+          li
+           i.fa.fa-edit.fa-lg
+           | You got comment form Kazblanka
+          li
+           i.fa.fa-envelope-o.fa-lg
+           | You got emial form Kazblanka
+          li
+           i.fa.fa-money.fa-lg
+           | You got money form Hmaza
+          li
+           i.fa.fa-thumbs-o-up.fa-lg
+           | You got like form Ahmed  
+      .noti-foot.text-center: a(href='#') View All Notification
