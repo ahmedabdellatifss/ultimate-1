@@ -21,4 +21,35 @@
            i.fa.fa-thumbs-o-up.fa-lg
            | You got like form Ahmed  
       .noti-foot.text-center: a(href='#') View All Notification
-  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon    
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/ahmed.png", alt="userimages")
+      span.user Ahmed Abdellatif
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby= 'dropdownMenuButton')
+       .user-info
+         h3 Ahmed Abdellatif
+         p Premium Member
+       hr
+       ul.activities-list.list-unstyled
+          li Added Commit on post "How To Make design by All tools"
+          li Created post on category "science"
+          li Created Chart on Chart page 
+          li who is design thie website 
+       hr
+       .row.usermenu-links
+         .col  
+           .link-box
+             i.fa.fa-gear.fa-lg.fa-fw
+             span Settings
+         .col
+          .link-box
+             i.fa.fa-user.fa-lg.fa-fw
+             span My Profile
+         .col
+           .link-box
+             i.fa.fa-power-off.fa-lg.fa-fw
+             span LogOut  
+
+
