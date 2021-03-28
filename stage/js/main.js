@@ -39,6 +39,16 @@ $(function(){
       .addClass($(this).data("theme"));
     });
 
+    // Switch Fonts Options
+    var fontclasses =[];
+    $('.font-options select option').each(function (){
+      fontclasses.push($(this).val());
+    });
+
+    $('.font-options select').on("change", function(){
+      $("body").removeClass(fontclasses.join(" ")).addClass($(this).find("option:selected").val());
+    });
+
 });
 
 var elem = document.documentElement;
