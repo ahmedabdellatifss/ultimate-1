@@ -8,17 +8,44 @@
     z-index: 1000;
     padding: 20px;
     transition: .3s;
+    .option-title{
+        font-weight: bold;
+        color:#666;
+        margin: 10px 15px;
+    }
     .toggle-settings {
         position: absolute;
         left: -55px;
         top : 100px;
         background-color:#FFF;
-        padding:10px 15px;
+        padding: 15px;
         font-size:22px;
         border-radius: 5px 0 0 5px;
         cursor: pointer;
     }
     &.hide-settings {
         right: -250px;
+    }
+    .color-options {
+        ul {
+          $colors: #27ae60, #2980b9, #c0392b, #d35400, #8e44ad;
+          @for $i from 1 through length($colors) {
+            li:nth-child(#{$i}) {
+                background-color: nth($colors, $i);
+            } 
+          }
+        }
+        li{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            opacity: .7;
+            cursor: pointer;
+            display: inline-block;
+            &.active {
+                opacity:1;
+            }
+
+        }
     }
 }

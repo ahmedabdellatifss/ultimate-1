@@ -1,0 +1,25 @@
+$themes:(
+    green-theme: (
+        color: #27ae60
+        ),
+    blue-theme: (
+        color: #2980b9
+        ),
+    red-theme: (
+        color: #c0392b
+        ), 
+    orange-theme :(
+        color: #d35400
+        ),
+    purple-theme: (
+           color: #8e44ad
+    )    
+    );
+@each $theme, $map in $themes {
+    .#{$theme} {
+        .page .page-head .page-title {
+            color: map-get($map, color);
+        }
+    }
+     
+}
