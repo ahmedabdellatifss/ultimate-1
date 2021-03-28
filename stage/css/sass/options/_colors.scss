@@ -13,12 +13,23 @@ $themes:(
         ),
     purple-theme: (
            color: #8e44ad
-    )    
+    )   
     );
 @each $theme, $map in $themes {
     .#{$theme} {
+        // here we cash the map-get in varaible to user mote time
+        $color : map-get($map, color);
         .page .page-head .page-title {
-            color: map-get($map, color);
+            color: $color;
+        }
+        .page .sidebar .links-area .child-links a:hover:before{
+            background-color: $color ;
+        }
+        .header .toggle-sidebar:hover {
+            color: $color ;
+        }
+        .header .usermenu-container .dropdown-menu .user-info h3 {
+            color: $color ;
         }
     }
      
